@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020 | Li Nannan的博客</title>
+  <title>css技巧 | Li Nannan的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前端工程师。">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Li Nannan的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+  <meta name="description" content="css技巧">
+<meta name="keywords" content="css技巧,css">
+<meta property="og:type" content="article">
+<meta property="og:title" content="css技巧">
+<meta property="og:url" content="http://yoursite.com/2020/05/30/css技巧/index.html">
 <meta property="og:site_name" content="Li Nannan的博客">
-<meta property="og:description" content="前端工程师。">
+<meta property="og:description" content="css技巧">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2020-06-02T09:06:17.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Li Nannan的博客">
-<meta name="twitter:description" content="前端工程师。">
+<meta name="twitter:title" content="css技巧">
+<meta name="twitter:description" content="css技巧">
   
     <link rel="alternative" href="/atom.xml" title="Li Nannan的博客" type="application/atom+xml">
   
@@ -152,89 +153,130 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-css技巧" class="article article-type-post " itemscope="" itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/02/video标签添加字幕/" class="archive-article-date">
-  	<time datetime="2020-06-02T12:30:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-02</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/02/video标签添加字幕/">video标签添加字幕</a>
+    <h1 class="article-title" itemprop="name">
+      css技巧
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">html</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">video</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/html//" class="article-tag-list-link color5">html</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/30/css技巧/" class="archive-article-date">
+        
+        <a href="/2020/05/30/css技巧/" class="archive-article-date">
   	<time datetime="2020-05-30T12:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-30</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/30/css技巧/">css技巧</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p> <a href="#使用css复位">使用CSS复位</a><br> <a href="#继承-box-sizing">继承 <code>box-sizing</code></a><br> <a href="#使用unset而不是重置所有属性">使用<code>unset</code>而不是重置所有属性</a><br> <a href="#使用-not-选择器来决定表单是否显示边框">使用 <code>:not()</code> 选择器来决定表单是否显示边框</a><br> <a href="#为-body-元素添加行高">为 body 元素添加行高</a><br> <a href="#为表单元素设置focus">为表单元素设置<code>:focus</code></a><br> <a href="#垂直居中任何元素">垂直居中任何元素</a><br> <a href="#逗号分隔列表">逗号分隔的列表</a><br> <a id="more"></a><br> <a href="#使用负的-nth-child-来选择元素">使用负的 <code>nth-child</code> 来选择元素</a><br> <a href="#使用-svg-图标">使用 SVG 图标</a><br> <a href="#使用-形似猫头鹰-的选择器">使用 “形似猫头鹰” 的选择器</a><br> <a href="#使用-max-height-来建立纯-css-的滑块">使用 <code>max-height</code> 来建立纯 CSS 的滑块</a><br> <a href="#创造格子等宽的表格">创造格子等宽的表格</a><br> <a href="#利用-flexbox-去除多余的外边距">利用 Flexbox 去除多余的外边距</a><br> <a href="#利用属性选择器来选择空链接">利用属性选择器来选择空链接</a><br> <a href="#给-默认-链接定义样式">给 “默认” 链接定义样式</a><br> <a href="#一致垂直节奏">一致的垂直节奏</a><br> <a href="#固定比例盒子">内在比例盒</a><br> <a href="#为图裂定义样式">为图裂定义样式</a><br> <a href="#用-rem-来调整全局大小用-em-来调整局部大小">用 rem 来调整全局大小；用 em 来调整局部大小</a><br> <a href="#隐藏没有静音自动播放的影片">隐藏没有静音、自动播放的影片</a><br> <a href="#使用选择器root来控制字体弹性">使用选择器 <code>:root</code> 来控制字体弹性</a><br> <a href="#为更好的移动体验为表单元素设置字体大小">为更好的移动体验，为表单元素设置字体大小</a><br> <a href="#使用指针事件來控制鼠标事件">使用指针事件來控制鼠标事件</a><br> <a href="#在用作间距的换行符上设置display-none">在用作间距的换行符上设置<code>display-none</code></a></p>
+<h3 id="使用CSS复位"><a href="#使用CSS复位" class="headerlink" title="使用CSS复位"></a>使用CSS复位</h3><p>CSS复位可以在不同的浏览器上保持一致的样式风格。您可以使用CSS reset 库<a href="http://necolas.github.io/normalize.css/" target="_blank" rel="noopener">Normalize</a>等，也可以使用一个更简化的复位方法：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">*,</span><br><span class="line">*<span class="selector-pseudo">::before</span>,</span><br><span class="line">*<span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>现在元素的 margin 和 padding 已为0，<code>box-sizing</code>可以管理您的CSS盒模型布局。</p>
+<h4 id="演示"><a href="#演示" class="headerlink" title="演示"></a><a href="http://codepen.io/AllThingsSmitty/pen/kkrkLL" target="_blank" rel="noopener">演示</a></h4><p>注意：如果你遵循接下来<a href="#inherit-box-sizing">继承 <code>box-sizing</code></a>讲解的这个技巧, 你不需要在以上代码中添加 <code>box-sizing</code> 属性。</p>
+<h3 id="继承-box-sizing"><a href="#继承-box-sizing" class="headerlink" title="继承 box-sizing"></a>继承 <code>box-sizing</code></h3><p>从 <code>html</code> 元素继承 <code>box-sizing</code> ：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span> &#123;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">*,</span><br><span class="line">*<span class="selector-pseudo">::before</span>,</span><br><span class="line">*<span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">box-sizing</span>: inherit;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如此在插件或其它组件里改变 <code>box-sizing</code> 变得简单。</p>
+<h3 id="使用unset而不是重置所有属性"><a href="#使用unset而不是重置所有属性" class="headerlink" title="使用unset而不是重置所有属性"></a>使用<code>unset</code>而不是重置所有属性</h3><p>重置元素的属性时，不需要重置每个单独的属性：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">button</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: none;</span><br><span class="line">  <span class="attribute">border</span>: none;</span><br><span class="line">  <span class="attribute">color</span>: inherit;</span><br><span class="line">  <span class="attribute">font</span>: inherit;</span><br><span class="line">  <span class="attribute">outline</span>: none;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>你可以用<code>all</code>简写來指定所有元素的属性。 将该值设置为<code>unset</code>会将元素的属性更改为其初始值：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">button</span> &#123;</span><br><span class="line">  <span class="attribute">all</span>: unset;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><strong>注意：</strong> 所有速记在IE11中不被支持，目前正在考虑Edge的支持。 IE11不支持<code>unset</code>。</p>
+<h3 id="使用-not-选择器来决定表单是否显示边框"><a href="#使用-not-选择器来决定表单是否显示边框" class="headerlink" title="使用 :not() 选择器来决定表单是否显示边框"></a>使用 <code>:not()</code> 选择器来决定表单是否显示边框</h3><p>先为元素添加边框</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 添加边框 */</span></span><br><span class="line"><span class="selector-class">.nav</span> <span class="selector-tag">li</span> &#123;</span><br><span class="line">  <span class="attribute">border-right</span>: <span class="number">1px</span> solid <span class="number">#666</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>为最后一个元素去除边框</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 去掉边框 */</span></span><br><span class="line"><span class="selector-class">.nav</span> <span class="selector-tag">li</span><span class="selector-pseudo">:last-child</span> &#123;</span><br><span class="line">  <span class="attribute">border-right</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>不过不要这么做，使用 <code>:not()</code> 伪类来达到同样的效果：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.nav</span> <span class="selector-tag">li</span><span class="selector-pseudo">:not(</span><span class="selector-pseudo">:last-child)</span> &#123;</span><br><span class="line">  <span class="attribute">border-right</span>: <span class="number">1px</span> solid <span class="number">#666</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>CSS选择器以人类描述它的方式定义边界。</p>
+<h4 id="演示-1"><a href="#演示-1" class="headerlink" title="演示"></a><a href="http://codepen.io/AllThingsSmitty/pen/LkymvO" target="_blank" rel="noopener">演示</a></h4><h3 id="为-body-元素添加行高"><a href="#为-body-元素添加行高" class="headerlink" title="为 body 元素添加行高"></a>为 <code>body</code> 元素添加行高</h3><p>不必为每一个 <code>&lt;p&gt;</code>，<code>&lt;h*&gt;</code> 元素逐一添加 <code>line-height</code>，直接添加到 <code>body</code> 元素：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">1.5</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>文本元素可以很容易地继承 <code>body</code> 的样式。</p>
+<h4 id="演示-2"><a href="#演示-2" class="headerlink" title="演示"></a><a href="http://codepen.io/AllThingsSmitty/pen/VjbdYd" target="_blank" rel="noopener">演示</a></h4><h3 id="为表单元素设置-focus"><a href="#为表单元素设置-focus" class="headerlink" title="为表单元素设置:focus"></a>为表单元素设置<code>:focus</code></h3><p>有視力的键盘用戶依靠焦點來確定键盘事件在頁面中的位置。 使表单元素的焦點脫穎而出，然后与浏览器的默认实现保持一致：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-pseudo">:focus</span>,</span><br><span class="line"><span class="selector-tag">button</span><span class="selector-pseudo">:focus</span>,</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-pseudo">:focus</span>,</span><br><span class="line"><span class="selector-tag">select</span><span class="selector-pseudo">:focus</span>,</span><br><span class="line"><span class="selector-tag">textarea</span><span class="selector-pseudo">:focus</span> &#123;</span><br><span class="line">  <span class="attribute">box-shadow</span>: none;</span><br><span class="line">  <span class="attribute">outline</span>: <span class="number">#000</span> dotted <span class="number">2px</span>;</span><br><span class="line">  <span class="attribute">outline-offset</span>: .<span class="number">05em</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="演示-3"><a href="#演示-3" class="headerlink" title="演示"></a><a href="https://codepen.io/AllThingsSmitty/pen/ePzoOP/" target="_blank" rel="noopener">演示</a></h4><h3 id="垂直居中任何元素"><a href="#垂直居中任何元素" class="headerlink" title="垂直居中任何元素"></a>垂直居中任何元素</h3><p>不！这绝不是黑魔法，真的可以垂直居中任何元素：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">html</span>,</span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">-webkit-align-items</span>: center;  </span><br><span class="line">  <span class="attribute">-ms-flex-align</span>: center;  </span><br><span class="line">  <span class="attribute">align-items</span>: center;</span><br><span class="line">  <span class="attribute">display</span>: -webkit-flex;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>…還有CSS Grid:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: grid;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100vh</span>;</span><br><span class="line">  <span class="attribute">margin</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">place-items</span>: center center;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这还不够？垂直方向，水平方向？任何元素，任何时间，任何地点？CSS-Tricks <a href="https://css-tricks.com/centering-css-complete-guide/" target="_blank" rel="noopener">有篇好文</a> 讲到了各种居中的技巧。</p>
+<p><strong>注意：</strong> IE11 对 flexbox 的支持<a href="https://github.com/philipwalton/flexbugs#3-min-height-on-a-flex-container-wont-apply-to-its-flex-items" target="_blank" rel="noopener">有点 bug</a>。</p>
+<h4 id="演示-4"><a href="#演示-4" class="headerlink" title="演示"></a><a href="http://codepen.io/AllThingsSmitty/pen/GqmGqZ" target="_blank" rel="noopener">演示</a></h4><h3 id="逗号分隔列表"><a href="#逗号分隔列表" class="headerlink" title="逗号分隔列表"></a>逗号分隔列表</h3><p>使列表的每项都由逗号分隔：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">ul</span> &gt; <span class="selector-tag">li</span><span class="selector-pseudo">:not(</span><span class="selector-pseudo">:last-child)</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">","</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>因最后一项不加逗号，可以使用 <code>:not()</code> 伪类。</p>
+<p><strong>注意：</strong> 这一技巧对于无障碍，特别是屏幕阅读器而言并不理想。而且复制粘贴并不会带走CSS生成的内容，需要注意。</p>
+<h3 id="使用负的-nth-child-来选择元素"><a href="#使用负的-nth-child-来选择元素" class="headerlink" title="使用负的 nth-child 来选择元素"></a>使用负的 <code>nth-child</code> 来选择元素</h3><p>使用负的 <code>nth-child</code> 可以选择 1 至 n 个元素。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">li</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/* 选择第 1 至第 3 个元素并显示出来 */</span></span><br><span class="line"><span class="selector-tag">li</span><span class="selector-pseudo">:nth-child(-n+3)</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>或许你已经掌握了<a href="#use-not-to-applyunapply-borders-on-navigation">如何使用 <code>:not()</code></a>这个技巧，试下这个：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/* 选择除前3个之外的所有项目，并显示它们 */</span></span><br><span class="line"><span class="selector-tag">li</span><span class="selector-pseudo">:not(</span><span class="selector-pseudo">:nth-child(-n+3))</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>如此简单！</p>
+<h4 id="演示-5"><a href="#演示-5" class="headerlink" title="演示"></a><a href="http://codepen.io/AllThingsSmitty/pen/WxjKZp" target="_blank" rel="noopener">演示</a></h4><h3 id="使用-SVG-图标"><a href="#使用-SVG-图标" class="headerlink" title="使用 SVG 图标"></a>使用 SVG 图标</h3><p>没有理由不使用 SVG 图标：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.logo</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">url</span>(<span class="string">"logo.svg"</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>SVG 在所有分辨率下都可以良好缩放，并且支持所有 <a href="https://caniuse.com/#search=svg" target="_blank" rel="noopener">IE9</a> 以后的浏览器，丢掉你的 .png，.jpg，或 .gif-jif-whatev 文件吧。</p>
+<p><strong>注意：</strong> 针对仅有图标的按钮，如果 SVG 没有加载成功的话，以下样式对无障碍有所帮助：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.no-svg</span> <span class="selector-class">.icon-only</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="built_in">attr</span>(aria-label);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="使用-“形似猫头鹰”-的选择器"><a href="#使用-“形似猫头鹰”-的选择器" class="headerlink" title="使用 “形似猫头鹰” 的选择器"></a>使用 “形似猫头鹰” 的选择器</h3><p>这个名字可能比较陌生，不过通用选择器 (<code>*</code>) 和 相邻兄弟选择器 (<code>+</code>) 一起使用，效果非凡：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">* + * &#123;</span><br><span class="line">  <span class="attribute">margin-top</span>: <span class="number">1.5em</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>在此示例中，文档流中的所有的相邻兄弟元素将都将设置 <code>margin-top: 1.5em</code> 的样式。</p>
+<p>更多 “形似猫头鹰”  的选择器，可参考 <em>A List Apart</em> 上面 <a href="http://alistapart.com/article/axiomatic-css-and-lobotomized-owls" target="_blank" rel="noopener">Heydon Pickering 的文章</a></p>
+<h4 id="演示-6"><a href="#演示-6" class="headerlink" title="演示"></a><a href="http://codepen.io/AllThingsSmitty/pen/grRvWq" target="_blank" rel="noopener">演示</a></h4><h3 id="使用-max-height-来建立纯-CSS-的滑块"><a href="#使用-max-height-来建立纯-CSS-的滑块" class="headerlink" title="使用 max-height 来建立纯 CSS 的滑块"></a>使用 <code>max-height</code> 来建立纯 CSS 的滑块</h3><p><code>max-height</code> 与 overflow hidden 一起来建立纯 CSS 的滑块：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.slider</span> &#123;</span><br><span class="line">  <span class="attribute">max-height</span>: <span class="number">200px</span>;</span><br><span class="line">  <span class="attribute">overflow-y</span>: hidden;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.slider</span><span class="selector-pseudo">:hover</span> &#123;</span><br><span class="line">  <span class="attribute">max-height</span>: <span class="number">600px</span>;</span><br><span class="line">  <span class="attribute">overflow-y</span>: scroll;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>鼠标移入滑块元素时增大它的 <code>max-height</code> 值，便可以显示溢出部分。</p>
+<h3 id="创造格子等宽的表格"><a href="#创造格子等宽的表格" class="headerlink" title="创造格子等宽的表格"></a>创造格子等宽的表格</h3><p><code>table-layout: fixed</code> 可以让每个格子保持等宽：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.calendar</span> &#123;</span><br><span class="line">  <span class="attribute">table-layout</span>: fixed;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>无痛的 table 布局。</p>
+<h4 id="演示-7"><a href="#演示-7" class="headerlink" title="演示"></a><a href="http://codepen.io/AllThingsSmitty/pen/jALALm" target="_blank" rel="noopener">演示</a></h4><h3 id="利用-Flexbox-去除多余的外边距"><a href="#利用-Flexbox-去除多余的外边距" class="headerlink" title="利用 Flexbox 去除多余的外边距"></a>利用 Flexbox 去除多余的外边距</h3><p>与其使用 <code>nth-</code>， <code>first-</code>， 和 <code>last-child</code> 去除列之间多余的间隙，不如使用 flexbox 的 <code>space-between</code> 属性：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.list</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: flex;</span><br><span class="line">  <span class="attribute">justify-content</span>: space-between;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.list</span> <span class="selector-class">.person</span> &#123;</span><br><span class="line">  <span class="attribute">flex-basis</span>: <span class="number">23%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>列之间的间隙总是均匀相等。</p>
+<h3 id="利用属性选择器来选择空链接"><a href="#利用属性选择器来选择空链接" class="headerlink" title="利用属性选择器来选择空链接"></a>利用属性选择器来选择空链接</h3><p>当 <code>&lt;a&gt;</code> 元素没有文本内容，但有 <code>href</code> 属性的时候，显示它的 <code>href</code> 属性：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-attr">[href^="http"]</span><span class="selector-pseudo">:empty</span><span class="selector-pseudo">::before</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="built_in">attr</span>(href);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>相当简便。</p>
+<h4 id="演示-8"><a href="#演示-8" class="headerlink" title="演示"></a><a href="http://codepen.io/AllThingsSmitty/pen/zBzXRx" target="_blank" rel="noopener">演示</a></h4><h3 id="给-“默认”-链接定义样式"><a href="#给-“默认”-链接定义样式" class="headerlink" title="给 “默认” 链接定义样式"></a>给 “默认” 链接定义样式</h3><p>给 “默认” 链接定义样式：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span><span class="selector-attr">[href]</span><span class="selector-pseudo">:not(</span><span class="selector-attr">[class]</span>) &#123;</span><br><span class="line">  <span class="attribute">color</span>: <span class="number">#008000</span>;</span><br><span class="line">  <span class="attribute">text-decoration</span>: underline;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>通过 CMS 系统插入的链接，通常没有 <code>class</code> 属性，以上样式可以甄别它们，而且不会影响其它样式。</p>
+<h3 id="一致垂直节奏"><a href="#一致垂直节奏" class="headerlink" title="一致垂直节奏"></a>一致垂直节奏</h3><p>通用选择器 (<code>*</code>) 跟元素一起使用，可以保持一致的垂直节奏：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.intro</span> &gt; * &#123;</span><br><span class="line">  <span class="attribute">margin-bottom</span>: <span class="number">1.25rem</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>一致的垂直节奏可以提供视觉美感，增强内容的可读性。</p>
+<h3 id="固定比例盒子"><a href="#固定比例盒子" class="headerlink" title="固定比例盒子"></a>固定比例盒子</h3><p>要创建具有固定比例的一个盒子，所有你需要做的就是给 div 的顶部或底部设置一个 padding：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.container</span> &#123;</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">padding-bottom</span>: <span class="number">20%</span>;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-class">.container</span> <span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">border</span>: <span class="number">2px</span> dashed <span class="number">#ddd</span>;	</span><br><span class="line">  <span class="attribute">height</span>: <span class="number">100%</span>;</span><br><span class="line">  <span class="attribute">left</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">position</span>: absolute;</span><br><span class="line">  <span class="attribute">top</span>: <span class="number">0</span>;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>使用 20％ 的 padding-bottom 使得框等于其宽度的 20％ 的高度。与视口宽度无关，子元素的 div 将保持其宽高比（100％/ 20％= 5:1）。</p>
+<h4 id="演示-9"><a href="#演示-9" class="headerlink" title="演示"></a><a href="http://codepen.io/AllThingsSmitty/pen/jALZvE" target="_blank" rel="noopener">演示</a></h4><h3 id="为图裂定义样式"><a href="#为图裂定义样式" class="headerlink" title="为图裂定义样式"></a>为图裂定义样式</h3><p>只要一点CSS就可以美化破损的图片：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">img</span> &#123;  </span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">font-family</span>: sans-serif;</span><br><span class="line">  <span class="attribute">font-weight</span>: <span class="number">300</span>;</span><br><span class="line">  <span class="attribute">height</span>: auto;</span><br><span class="line">  <span class="attribute">line-height</span>: <span class="number">2</span>;</span><br><span class="line">  <span class="attribute">position</span>: relative;</span><br><span class="line">  <span class="attribute">text-align</span>: center;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">100%</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以添加伪元素的法则来显示用户信息和URL的引用：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">img</span><span class="selector-pseudo">::before</span> &#123;  </span><br><span class="line">  <span class="attribute">content</span>: <span class="string">"We're sorry, the image below is broken :("</span>;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">margin-bottom</span>: <span class="number">10px</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">img</span><span class="selector-pseudo">::after</span> &#123;  </span><br><span class="line">  <span class="attribute">content</span>: <span class="string">"(url: "</span> <span class="built_in">attr</span>(src) <span class="string">")"</span>;</span><br><span class="line">  <span class="attribute">display</span>: block;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">12px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>了解更多关于这类样式的技巧 <a href="https://github.com/ireade/" target="_blank" rel="noopener">Ire Aderinokun</a> 的 <a href="http://bitsofco.de/styling-broken-images/" target="_blank" rel="noopener">原帖</a>.</p>
+<h3 id="用-rem-来调整全局大小；用-em-来调整局部大小"><a href="#用-rem-来调整全局大小；用-em-来调整局部大小" class="headerlink" title="用 rem 来调整全局大小；用 em 来调整局部大小"></a>用 <code>rem</code> 来调整全局大小；用 <code>em</code> 来调整局部大小</h3><p>在根元素设置基本字体大小后 (<code>html { font-size: 100%; }</code>), 使用 <code>em</code> 设置文本元素的字体大小:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">h2</span> &#123; </span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">2em</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">p</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">1em</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后设置模块的字体大小为 <code>rem</code>:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">article</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">1.25rem</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="selector-tag">aside</span> <span class="selector-class">.module</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: .<span class="number">9rem</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>现在，每个模块变得独立，更容易、灵活的样式便于维护。</p>
+<h3 id="隐藏没有静音、自动播放的影片"><a href="#隐藏没有静音、自动播放的影片" class="headerlink" title="隐藏没有静音、自动播放的影片"></a>隐藏没有静音、自动播放的影片</h3><p>这是一个自定义用户样式表的不错的技巧。避免在加载页面时自动播放。如果没有静音，则不显示视频：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">video</span><span class="selector-attr">[autoplay]</span><span class="selector-pseudo">:not(</span><span class="selector-attr">[muted]</span>) &#123;</span><br><span class="line">  <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>再次，我们利用了 <a href="#use-not-to-applyunapply-borders-on-navigation"><code>:not()</code></a> 的优点。</p>
+<h3 id="使用选择器-root灵活控制字体大小"><a href="#使用选择器-root灵活控制字体大小" class="headerlink" title="使用选择器:root灵活控制字体大小"></a>使用选择器<code>:root</code>灵活控制字体大小</h3><p>在响应式布局中，字体大小应需要根据不同的视口进行调整。你可以计算字体大小根据视口高度的字体大小和宽度，这时需要用到<code>:root</code>:</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-pseudo">:root</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="built_in">calc</span>(1vw + 1vh + .5vmin);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>现在，您可以使用 <code>root em</code> </p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="attribute">font</span>: <span class="number">1rem</span>/<span class="number">1.6</span> sans-serif;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h4 id="演示-10"><a href="#演示-10" class="headerlink" title="演示"></a><a href="http://codepen.io/AllThingsSmitty/pen/XKgOkR" target="_blank" rel="noopener">演示</a></h4><h3 id="为更好的移动体验，为表单元素设置字体大小"><a href="#为更好的移动体验，为表单元素设置字体大小" class="headerlink" title="为更好的移动体验，为表单元素设置字体大小"></a>为更好的移动体验，为表单元素设置字体大小</h3><p>当触发<code>&lt;select&gt;</code>的下拉列表时，为了避免表单元素在移动浏览器（iOS Safari 和其它）上的缩放，加上<code>font-size</code>：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="text"]</span>,</span><br><span class="line"><span class="selector-tag">input</span><span class="selector-attr">[type="number"]</span>,</span><br><span class="line"><span class="selector-tag">select</span>,</span><br><span class="line"><span class="selector-tag">textarea</span> &#123;</span><br><span class="line">  <span class="attribute">font-size</span>: <span class="number">16px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>:dancer:</p>
+<h3 id="使用指针事件來控制鼠标事件"><a href="#使用指针事件來控制鼠标事件" class="headerlink" title="使用指针事件來控制鼠标事件"></a>使用指针事件來控制鼠标事件</h3><p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/pointer-events" target="_blank" rel="noopener">指针事件</a>允許您指定鼠标如何与其触摸的元素进行交互。 要禁用按钮上的默认指针事件，例如：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.button-disabled</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: .<span class="number">5</span>;</span><br><span class="line">  <span class="attribute">pointer-events</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>就这么简单。</p>
+<h3 id="在用作间距的换行符上设置display-none"><a href="#在用作间距的换行符上设置display-none" class="headerlink" title="在用作间距的换行符上设置display: none"></a>在用作间距的换行符上设置<code>display: none</code></h3><p>正如<a href="https://twitter.com/csswizardry/status/1170835532584235008" target="_blank" rel="noopener">Harry Roberts指出</a>，这有助于防止CMS用户使用额外的换行符</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">br</span> + <span class="selector-tag">br</span> &#123;</span><br><span class="line">  <span class="attribute">display</span>: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="支持情况"><a href="#支持情况" class="headerlink" title="支持情况"></a>支持情况</h3><p>这些技巧适用于最新版的 Chrome, Firefox, Safari, Opera, Edge, 以及 IE11。</p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -250,7 +292,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -263,70 +305,113 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/05/30/css技巧/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/26/网站变灰/" class="archive-article-date">
-  	<time datetime="2020-05-26T07:30:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-26</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2020/06/02/video标签添加字幕/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          video标签添加字幕
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2020/05/26/网站变灰/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">网站变灰技巧</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/26/网站变灰/">网站变灰技巧</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">css技巧</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/css//" class="article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -349,8 +434,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,

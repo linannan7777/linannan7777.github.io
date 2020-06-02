@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2020 | Li Nannan的博客</title>
+  <title>video标签添加字幕 | Li Nannan的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="前端工程师。">
-<meta name="keywords" content="前端,js,jquery,javascript,html5,开发者,html,css,css3,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Li Nannan的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2020/index.html">
+  <meta name="description" content="video标签添加字幕">
+<meta name="keywords" content="html,video">
+<meta property="og:type" content="article">
+<meta property="og:title" content="video标签添加字幕">
+<meta property="og:url" content="http://yoursite.com/2020/06/02/video标签添加字幕/index.html">
 <meta property="og:site_name" content="Li Nannan的博客">
-<meta property="og:description" content="前端工程师。">
+<meta property="og:description" content="video标签添加字幕">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2020-06-02T09:06:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Li Nannan的博客">
-<meta name="twitter:description" content="前端工程师。">
+<meta name="twitter:title" content="video标签添加字幕">
+<meta name="twitter:description" content="video标签添加字幕">
   
     <link rel="alternative" href="/atom.xml" title="Li Nannan的博客" type="application/atom+xml">
   
@@ -152,36 +153,86 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-video标签添加字幕" class="article article-type-post " itemscope="" itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/06/02/video标签添加字幕/" class="archive-article-date">
-  	<time datetime="2020-06-02T12:30:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-02</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/06/02/video标签添加字幕/">video标签添加字幕</a>
+    <h1 class="article-title" itemprop="name">
+      video标签添加字幕
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2020/06/02/video标签添加字幕/" class="archive-article-date">
+  	<time datetime="2020-06-02T12:30:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-06-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>现在各种支持HTML5的浏览器都能够播放html5视频了，但是对于字幕的支持却很少，我们期待像DVD那样强大的字幕。</p>
+<p>往往我们还不得不通过js来做，着实是一件痛苦的事情。</p>
+<p>现在IE10率先对HTML5 Video 字幕给与内置的支持，而且还支持多语言，可任意切换，真是太给力了。<br><a id="more"></a><br>示例代码如下：</p>
+ <figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">video</span> <span class="attr">id</span>=<span class="string">"mainvideo"</span> <span class="attr">controls</span> <span class="attr">autoplay</span> <span class="attr">loop</span>&gt;</span>  </span><br><span class="line">  <span class="tag">&lt;<span class="name">track</span> <span class="attr">src</span>=<span class="string">"en_track.vtt"</span> <span class="attr">srclang</span>=<span class="string">"en"</span> <span class="attr">label</span>=<span class="string">"English"</span> <span class="attr">kind</span>=<span class="string">"caption"</span> <span class="attr">default</span>&gt;</span>  </span><br><span class="line">  <span class="tag">&lt;<span class="name">track</span> <span class="attr">src</span>=<span class="string">"cn_track.vtt"</span> <span class="attr">srclang</span>=<span class="string">"zh-cn"</span> <span class="attr">label</span>=<span class="string">"简体中文"</span> <span class="attr">kind</span>=<span class="string">"caption"</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">video</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>通过两个<track>标签分别指定了一个英文字幕文件、一个中文字幕文件，默认为中文字幕，用户可以切换，也可以由程序脚本切换。<br>IE10支持2种字幕文件格式：</p>
+<ul>
+<li>WebVTT : Web Video Text Track  (Web视频文本轨道)</li>
+<li>TTML : Timed Text Markup Language (时序文本标记语言)</li>
+</ul>
+<h2 id="WebVTT"><a href="#WebVTT" class="headerlink" title="WebVTT"></a>WebVTT</h2><p>WebVTT是UTF-8编码格式的文本文件，内容示例如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">WEBVTT  </span><br><span class="line">  </span><br><span class="line">00:00:01.878 --&gt; 00:00:05.334  </span><br><span class="line">曾经有一份真诚的爱情放在我面前，  </span><br><span class="line">  </span><br><span class="line">00:00:08.608 --&gt; 00:00:15.296  </span><br><span class="line">我没有珍惜，等我失去的时候我才后悔莫及，   </span><br><span class="line">人世间最痛苦的事莫过于此。</span><br></pre></td></tr></table></figure>
+<p>第一行必需是WEBVTT，接着空行，接下来是一行时间范围＋一行或多行字幕内容＋空行，一行时间范围＋一行或多行字幕内容＋空行，……</p>
+<p>时间格式是HH:MM:SS.sss，时:分:秒.毫秒， 开始时间 –&gt; 结束时间，–&gt;的两边各有一个空格，这两个时间必需写在同一行。</p>
+<p>时间都是相对于视频开始的时间间隔。</p>
+<p>时间之后是字幕文本，时间和字幕文本之间不能有空行，字幕文本可以是一行或多行，字幕文本中不能有空行。WebVTT字幕文件的MIME类型约定是”text/vtt”，需要在IIS或者Apache等Web服务器中配置.</p>
+<h2 id="TTML"><a href="#TTML" class="headerlink" title="TTML"></a>TTML</h2><p>TTML是xml格式的文件，内容示例如下：</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version='1.0' encoding='UTF-8'?&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">tt</span> <span class="attr">xmlns</span>=<span class="string">'http://www.w3.org/ns/ttml'</span> <span class="attr">xml:lang</span>=<span class="string">'en'</span> &gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">div</span>&gt;</span>  </span><br><span class="line">  </span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">begin</span>=<span class="string">"00:00:01.878"</span> <span class="attr">end</span>=<span class="string">"00:00:05.334"</span> &gt;</span>曾经有一份真诚的爱情放在我面前，<span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;<span class="name">p</span> <span class="attr">begin</span>=<span class="string">"00:00:08.608"</span> <span class="attr">end</span>=<span class="string">"00:00:15.296"</span> &gt;</span>我没有珍惜，等我失去的时候我才后悔莫及，<span class="tag">&lt;<span class="name">br</span>/&gt;</span>人世间最痛苦的事莫过于此。<span class="tag">&lt;/<span class="name">p</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span>  </span><br><span class="line">  </span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span>  </span><br><span class="line"><span class="tag">&lt;/<span class="name">tt</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>结构很明确了，分别是tt标签，body标签，div标签，p标签，br标签，和HTML很像啊！p元素的begin/end属性指定了字幕的起止时间。<br>TTML文件的MIME类型约定为application/ttml+xml</p>
+<p>通过在video标签内使用1个或多个track标签来指定1个或多个语言的字幕文件，每个track元素对应一个字幕文件。</p>
+<p>track标签的属性主要有4个，如下表：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>kind</td>
+<td>定义字幕内容类型，只能是这五种之一: subtitles, captions, descriptions, chapters, metadata.</td>
+</tr>
+<tr>
+<td>src</td>
+<td>字幕文件的URL地址</td>
+</tr>
+<tr>
+<td>srclang</td>
+<td>字幕文件的语言类型，标识信息的作用，播放器不使用这个属性。</td>
+</tr>
+<tr>
+<td>label</td>
+<td>字幕标签，每个字幕元素必需设置一个唯一不重复的标签，切换字幕时显示的名称。</td>
+</tr>
+<tr>
+<td>default</td>
+<td>指定是否是默认字幕。如果每个都不指定，将不会自动显示字幕.</td>
+</tr>
+</tbody>
+</table>
+<p> 可以通过javascript方式访问每一个字幕元素，甚至其中的每一句台词。这一部分代码比较多，我就不展开了，有兴趣的可以自己看原文。</p>
+<p>参考链接： <a href="http://msdn.microsoft.com/en-us/library/ie/hh673566(v=vs.85).aspx" target="_blank" rel="noopener">http://msdn.microsoft.com/en-us/library/ie/hh673566(v=vs.85).aspx</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -197,7 +248,7 @@
 		</ul>
 	</div>
 
-          
+      
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -210,123 +261,104 @@
 	</div>
 
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2020/06/02/video标签添加字幕/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/30/css技巧/" class="archive-article-date">
-  	<time datetime="2020-05-30T12:30:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-30</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2020/05/30/css技巧/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">css技巧</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/30/css技巧/">css技巧</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">css技巧</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/css//" class="article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
+        
+        
+    </div>
+</aside>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2020/05/26/网站变灰/" class="archive-article-date">
-  	<time datetime="2020-05-26T07:30:16.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-05-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2020/05/26/网站变灰/">网站变灰技巧</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">css技巧</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/css//" class="article-tag-list-link color4">css</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
 
 
           </div>
@@ -349,8 +381,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
